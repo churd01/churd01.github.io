@@ -1,0 +1,240 @@
+/* Nav bar */
+nav {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    margin: 0.75rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+nav ul li {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    display: flex;
+    float: left;
+    justify-content: center;
+    padding: 1px .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+    border-width: 5px;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.resume li {
+    border-color: #800000;
+}
+
+.resume li:hover {
+    background-color: #800000;
+    color: white;
+}
+
+.about_me li {
+    border-color: #235789;
+}
+
+.about_me li:hover {
+    background-color: #235789;
+    color: white;
+}
+
+.portfolio li {
+    border-color: #FFC857;
+}
+
+.portfolio li:hover {
+    background-color: #FFC857;
+    color: white;
+}
+
+.senior_project li {
+    border-color: #800000;
+    border-style: solid;
+}
+
+.senior_project li:hover {
+    background-color: #800000;
+    color: white;
+}
+/*Main content */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+/* carousel */
+.carousel {
+    flex: 1;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 1rem
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: calc(70% + 20px);
+}
+
+.carousel-image {
+    width: 100%;
+    margin-right: 20px;
+    flex-shrink: 1;
+    cursor: pointer;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+/* carousel buttons */
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.prev, .next {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.prev:hover, .next:hover {
+    background-color: #B22222;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 90%;
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Show description */
+
+.show-descriptor {
+    flex: 1;
+    margin-left: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+.show-title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+hr {
+    border: .1rem solid;
+    width: 100%;
+}
+
+
+
+/* footer */
+footer {
+    padding: 1rem;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone, .email, .linkedin {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.phone button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.email button {
+    background-color: #235789;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.phone button:hover,
+.email button:hover{
+    text-decoration: underline;
+}
+
+.work-note {
+    margin-left: auto;
+}

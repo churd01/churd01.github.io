@@ -1,0 +1,172 @@
+/* Nav bar */
+nav {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    margin: 0.75rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+nav ul li {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    display: flex;
+    float: left;
+    justify-content: center;
+    padding: 1px .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+    border-width: 5px;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.resume li {
+    border-color: #800000;
+}
+
+.resume li:hover {
+    background-color: #800000;
+    color: white;
+}
+
+.about_me li {
+    border-color: #235789;
+}
+
+.about_me li:hover {
+    background-color: #235789;
+    color: white;
+}
+
+.portfolio li {
+    border-color: #FFC857;
+}
+
+.portfolio li:hover {
+    background-color: #FFC857;
+    color: white;
+}
+
+.senior_project li {
+    border-color: #800000;
+    background-color: #800000;
+}
+
+.senior_project li:hover {
+    cursor: pointer;
+}
+
+/* Main content */
+
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+}
+
+.full_view_button button {
+    border: 5px solid;
+    border-color: #800000;
+}
+
+.full_view_button button:hover {
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* footer */
+footer {
+    padding: 1rem;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone, .email, .linkedin {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.phone button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.email button {
+    background-color: #235789;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.phone button:hover,
+.email button:hover{
+    text-decoration: underline;
+}
+
+.work-note {
+    margin-left: auto;
+}
