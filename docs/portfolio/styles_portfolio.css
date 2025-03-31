@@ -18,6 +18,10 @@ nav {
     margin: 0.75rem;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -55,6 +59,7 @@ nav ul li a {
 .resume li:hover {
     background-color: #800000;
     color: white;
+    cursor: pointer;
 }
 
 .about_me li {
@@ -64,15 +69,17 @@ nav ul li a {
 .about_me li:hover {
     background-color: #235789;
     color: white;
+    cursor: pointer;
 }
 
 .portfolio li {
     border-color: #FFC857;
+    background-color: #FFC857;
 }
 
 .portfolio li:hover {
-    background-color: #FFC857;
     color: white;
+    cursor: pointer;
 }
 
 .senior_project li {
@@ -83,6 +90,7 @@ nav ul li a {
 .senior_project li:hover {
     background-color: #800000;
     color: white;
+    cursor: pointer;
 }
 /*Main content */
 .content {

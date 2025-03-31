@@ -18,6 +18,10 @@ nav {
     margin: 0.75rem;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
