@@ -108,6 +108,7 @@ nav ul li a {
 .carousel {
     flex: 1;
     max-width: 600px;
+    max-height: auto;
     overflow: hidden;
     margin: 1rem
 }
