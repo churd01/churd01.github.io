@@ -188,3 +188,66 @@ footer {
 .work-note {
     margin-left: auto;
 }
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0.5rem;
+        width: 50px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.25rem 0;
+        font-size: 0.7rem;
+        width: auto;
+    }
+
+    .pdf-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem auto;
+        padding: 0.5rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem auto;
+    }
+
+    .buttons button {
+        margin: 0.5rem 0;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .phone, .email, .linkedin {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .phone button, .email button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .work-note {
+        margin: 0.5rem 0;
+    }
+}

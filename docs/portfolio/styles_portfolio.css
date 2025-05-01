@@ -247,3 +247,79 @@ footer {
 .work-note {
     margin-left: auto;
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0.5rem;
+        width: 80px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        width: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        max-width: 50%;
+        margin: 0.5rem;
+    }
+
+    .carousel-image {
+        width: 100%;
+    }
+
+    .carousel-buttons {
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .phone, .email, .linkedin {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .show-descriptor {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .phone button, .email button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
