@@ -1,0 +1,27 @@
+{
+  "name": "Claire-Hurd-Website",
+  "version": "1.0.0",
+  "description": "Personal website for Claire Hurd with Jest testing and linters",
+  "devDependencies": {
+    "@testing-library/dom": "^9.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "htmlhint": "^1.1.4",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^22.0.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^32.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint:css": "stylelint 'docs/**/*.css'",
+    "lint:html": "htmlhint 'docs/**/*.html'",
+    "lint": "npm run lint:css && npm run lint:html"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}
